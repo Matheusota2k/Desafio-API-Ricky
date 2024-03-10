@@ -1,13 +1,16 @@
-import Nav  from './Nav'
+'use client'
 
-export default function Header(){
+import Nav from './Nav';
+
+
+export default function Header() {
+    
     return (
-        <div className='flex gap-x-4 justify-center p-4'>
-
-            <Nav titulo="inicio" url="/"></Nav>
-            <Nav titulo="Walace" url="/walace"></Nav>
-            <Nav titulo="sobre" url="/sobre"></Nav>
-
+        <main>
+        <div>
+            <img src='https://t.ctcdn.com.br/tBiOezzZAuJtYldGP2IUl6ANKzs=/i489931.jpeg'className="flex bg-black flex-icon w-12 h-12 py-0 px-0 " />  
+            <Nav titulo="inicio" url="/" className = 'flex  '/>
         </div>
-    )
+        </main>
+    );
 }
